@@ -1,0 +1,27 @@
+:root {
+    --main-bg-color: #001414;
+    --standard-dimension: 100px;
+    --h: 32;
+    --s: 100%;
+    --l: 50%;
+    --gradient: 180deg; 
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.ball {
+    width: var(--standard-dimension);
+    height: var(--standard-dimension);
+    background-color: hsl(var(--h) var(--s) var(--l) / 0.5); 
+    border-radius: calc(var(--standard-dimension)/2);
+    border: 1px solid hsl(var(--h) var(--s) var(--l) / 1);
+ 
+}
+
+.ball:hover {
+
+    background: linear-gradient(var(--gradient), red, yellow);
+
+}
