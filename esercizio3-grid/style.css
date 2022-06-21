@@ -1,0 +1,53 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    
+          
+}
+
+.grid-container > div {
+    padding: 45px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    border: 2px solid grey;
+}
+
+#result {
+    grid-column: 1 / -1;
+    text-align: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(90, 86, 86);
+    color: #ffff;
+    
+}
+
+#equals {
+    grid-row: 3 / 7;
+    grid-column: 4;
+    align-self: stretch; /*se uso align-self center non ho più il bordo lungo tutto il pulsante uguale e non posso applicare il radius */
+    padding-top: 250px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(246, 136, 136);
+      
+}
+
+.zero {
+    border-bottom-left-radius: 20px;
+
+}
+
+.sign {
+    background-color: rgb(201, 201, 201);
+}
+
+.num, .zero {
+    background-color: rgb(230, 241, 255);
+}
