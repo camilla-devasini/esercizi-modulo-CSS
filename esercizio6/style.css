@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+
+body {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+    color: #fff;
+
+}
+
+li a {
+    text-decoration: none;
+    color: #ffff;
+   
+}
+
+button[type="submit"] {
+   margin-right: 10px;
+  
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(32, 141, 85);
+    color: #ffff;
+
+}
+
+input, button {
+    padding: 3px;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgb(0, 0, 0);
+    height: 45px;
+
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    color: #ffff;
+
+}
+
+.hamburger-menu {
+    margin-right: 10px;
+    display: none;
+
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    display: block;
+    border-radius: 30px;
+    background-color: rgb(249, 254, 105);
+    margin: 4px 0;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .hamburger-menu {
+        display: block;
+           
+    }
+    
+    li:not(.nav), .search {
+        display: none;
+        
+    }
+} 
+    
