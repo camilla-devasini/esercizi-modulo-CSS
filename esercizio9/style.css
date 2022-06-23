@@ -1,0 +1,138 @@
+:root {
+    --dark-grey:rgb(64, 63, 63);
+    --medium-grey: rgb(177, 177, 177);
+    --light-grey: rgb(234, 232, 232); 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: linear-gradient(to bottom, var(--medium-grey), rgb(255, 255, 255));
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 5px 5px var(--medium-grey);
+    
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    
+}
+
+.avatar span {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    margin-top: 3px;
+    
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.menu span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--dark-grey);
+    
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;  
+}
+
+.user p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+
+.user p:first-of-type {
+    color: var(--dark-grey);
+
+}
+
+.user p:nth-of-type(2) {
+    font-size: 12px;
+    color: var(--light-grey);
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-body > p {
+    text-align: justify;
+    padding: 10px;
+    margin-top: 3px;
+} 
+
+img {
+    height: 215px;
+}
+
+.interactions {
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .card-container {
+        display: grid;
+        grid-template-areas:
+            "card1 card2"
+            "card3 .";
+      
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 992px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       
+    }
+
+    .card {
+        margin: 15px;
+        
+    }
+}
