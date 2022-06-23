@@ -1,0 +1,56 @@
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "verde verde verde"
+        "giallo rosso blu"
+        "giallo rosso blu"
+        "arancio arancio blu";
+    height: 100vh;
+  
+}
+
+#green {
+    grid-area: verde;
+
+}
+
+#yellow {
+    grid-area: giallo;
+
+}
+
+#red {
+    grid-area: rosso;
+
+}
+
+#blue {
+    grid-area: blu;
+
+}
+
+#orange {
+    grid-area: arancio;
+
+}
+
+
+#yellow, #red {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#yellow ul, #red ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+#yellow ul > li, #red ul > li {
+   align-self: center;
+   padding: 1.5em;
+
+}
+
