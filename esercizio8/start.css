@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    height: 100vh; /*se volessimo estendere le colonne per tutta la vertical height*/
+
+}
+
+
+#yellow {
+    order: -1;
+
+}
+
+#red {
+    order: -1;
+
+}
+
+#orange {
+    flex-grow: 2;
+    
+}
